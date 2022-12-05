@@ -1,0 +1,568 @@
+/* Foilha de estilo site de notícias */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #f3f3f3;
+	min-width: 300px;
+	/*border: 1px solid red;*/
+}
+
+
+/* inicio estilo do topo da página */
+
+#container{
+	width: 80%;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+	/*border: 1px solid red;*/
+	/*background-color: #CBDFF4;*/
+}
+#container #prestador-content{
+	position: fixed;
+	top: 40%;
+	left: 25%;
+	background-color: #CBDFF4;
+	width: 50%;
+	text-align: justify;
+	border-radius: 70px;
+}
+#container #prestador-content p{
+	margin: 50px
+}
+
+#topo{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 100px;
+	padding-top: 25px;
+	background-color: #294c71;
+}
+
+#codigo-do-prestador{
+  float: right;
+}
+
+#logo{
+	width: 120px;
+	background-size: contain;
+	text-align: center;
+	color: #b10333;
+	position: relative;
+	top: -20px;
+}
+
+#logo img{
+	width: 100%;
+	margin: 0 auto;
+	border: none;
+}
+
+#logo h1{
+	background-color: #f3f3f3;
+	border-radius: 10px;
+}
+
+
+/*
+  BARRA DE NAVEGAÇÕA
+*/
+
+ul{
+	padding: 0;
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+#topo ul{
+	width: auto;
+	background: #b10333;
+    position: relative;
+    margin: 0 auto;
+	top: -18px;
+	/*border: 1px solid red;*/
+	width: fit-content;
+}
+
+#topo ul li{
+	float: left;
+	background: #b10333;
+}
+
+#topo ul li a{
+	font-size: 0.9em;
+	text-decoration: none;
+	display: block;
+	line-height: 2.1em;
+	color: white;
+	padding: 0.5em 1.174em;
+	background: url("../images/divisor.png")
+	            no-repeat left center;
+}
+
+#topo ul li.primeiro a
+{
+	background: none;
+}
+
+#topo ul a:hover{
+	color: #69001d;
+}
+
+
+/*seleção de pagina atual*/
+body.Prestador #navegacao-horizontal a#Prestador,
+body.Home #navegacao-horizontal a#Home,
+body.Emissao #navegacao-horizontal a#Emissao,
+body.Faturamento #navegacao-horizontal a#Faturamento,
+body.Movimentacao #navegacao-horizontal a#Movimentacao,
+body.Relatorio #navegacao-horizontal a#Relatorio,
+body.Configuracoes #navegacao-horizontal a#Configuracoes
+body.Consultar #navegacao-horizontal a#Consultar
+body.Sair #navegacao-horizontal a#Sair
+{
+	background: #FA9E39;
+    color: #fff;
+    cursor: text;
+}
+
+/*
+  FIM BARRA DE NAVEGAÇÕA
+*/
+
+/* Fim estilo do topo da página */
+
+
+/*
+	INICIO CONTEUDO 
+*/
+
+/*
+	Para inverter a forma como os conteudos são mostrados na tela
+    foi utilizado o recurso de margin, de modo que as posições
+    dos itens fossem trocadas devido ao comportamento do parametro
+    float: left;
+*/
+
+#content{
+	margin-top: 60px;
+	background: #f5f5f5;
+	width: 100%;
+	/*border: 1px solid red;*/
+}
+#prestador-content{
+	position:relative;
+}
+
+/*
+* Formatando imagens 
+*/
+img{
+	border: 2px solid #dfdfdf;
+}
+
+
+
+
+/*****************
+Estilisando lateral
+********************/
+
+#lateral{
+	position: relative;
+	width: 100%;
+	/*background: yellow;*/
+
+}
+
+.caixa{
+	background: #f3f3f3 url("../images/fundo-caixa.png");
+	margin: 10px 0;
+	padding: 5px;
+}
+
+h2{
+	font-size: 1.1em;
+	background: #294c71;
+	color: #fff;
+	padding: 5px;
+
+}
+
+.caixa h3.destaque{
+		font-size: 0.8em;
+		background: red;
+		color: white;
+		text-align: center;
+		padding: 2px;
+		width: 100%;
+		text-transform: uppercase;
+}
+
+.caixa-conteudo{
+	background: white;
+	padding: 5px;
+	margin-top: 5px;
+	width: 95%;
+}
+
+.caixa-conteudo img{
+	width: 100%;
+}
+
+.caixa-conteudo a{
+	color: #2791FF;
+	text-transform: uppercase;
+}
+
+.caixa-conteudo a:hover{
+	color: black;
+	font-weight: bold;
+	background: lightgray;
+}
+
+/*
+.caixa-conteudo li:hover{
+
+	background: #EAF5FF;
+}
+*/
+
+.caixa-conteudo .news-element img{
+	width: 40%;
+	height: 40%;
+}
+
+.caixa-conteudo .news-element{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 1em;
+}
+
+.caixa-conteudo .news-element .text-news
+{
+	display: flex;
+	flex-direction: column;
+	font-size: 0.8em;
+	text-align: left;
+	margin-left: 0.3em;
+	/*border: 1px solid red;*/
+}
+
+/*
+.caixa-conteudo .news-element .text-news a:hover
+{
+	color: black;
+	font-weight: bold;
+	background: lightgray;
+}
+
+.caixa-conteudo .news-element .text-news a
+{
+
+	
+}
+*/
+
+#lateral ul a{
+	font-size: 0.9em;
+	padding: 3px;
+	display: block;
+	line-height: 30px;
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+#lateral ul a:hover{
+	background: #CBDFF4 url("../images/marcador.png") 
+	no-repeat left;
+	padding-left: 20px;
+	color: white;
+}
+
+label{
+	display: block;
+	cursor: pointer;
+}
+
+
+/*****************
+Fim Estilisando lateral
+********************/
+
+
+
+/*******************
+* Estilo menu suspenso
+*******************/
+
+#lateral-2-menu-suspenso{
+    display: none;
+	position: absolute;
+	width: fit-content;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border: 1px solid cornflowerblue;
+}
+#demonstrativos:hover #lateral-2-menu-suspenso{
+	display: block;
+}
+
+/*******************
+* Fim estilo menu suspenso
+*******************/
+
+
+
+
+/******************
+Estilizando as colunas
+*******************/
+
+
+/*
+*  INÍCIO COLUNA PRIMÁRIA
+*/
+#primario{
+	width: 300px;
+	height: 500px;
+	float: left;
+	margin: 0 0 20px 300px;
+	text-align: left;
+	position: relative;
+	left: -25%;
+	/*background: blue;*/
+}
+
+
+#duas-colunas #primario{
+	width: 555px;
+}
+
+#uma-coluna #primario{
+    width: 950px;
+    margin: 0 0 20px 0;
+}
+
+
+
+/*
+*  FIM COLUNA PRIMÁRIA
+*/
+
+
+
+
+#secundario{
+	width: 40%;
+	float: left;
+	margin: 0 0 20px 15px;
+	/*background: green;*/
+	position: relative;
+	left: -10em;
+}
+
+
+/******************
+Fim Estilizando as colunas
+*******************/
+
+
+/******************
+Estilizando as fomulário
+*******************/
+#formulario{
+	width: 450px;
+	margin: 0 auto;
+}
+#formulario .fomularioFiltro{
+	text-align: center;
+	border-radius: 20px;
+	background-color: #dfdfdf;
+	padding: 10px;
+}
+#formulario .fomularioFiltro input,
+#formulario .fomularioFiltro button,
+#formulario .fomularioFiltro select,
+#formulario .fomularioFiltro label
+{
+	display: block;
+	margin: 0 auto;
+}
+
+#formulario .fomularioFiltro button{
+	margin-top: 30px;
+	width: 100px;
+	height: 30px;
+	display: inline;
+}
+
+#formulario .fomularioFiltro h1{
+	font-size: large;
+	margin-bottom: 10px;
+}
+
+#formulario .fomularioFiltro input{
+	width: 300px;
+	height: 40px;
+	text-align: center;
+}
+
+#formulario .fomularioFiltro label{
+	padding-top:30px;
+}
+
+#formulario .fomularioFiltro select{
+	width: 150px;
+	text-align: center;
+}
+
+#formulario .fomularioFiltro #inputDate{
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#formulario .fomularioFiltro #inputDate input{
+	width: 150px;
+	display: inline;
+
+}
+
+
+/******************
+Fim Estilizando as fomulário
+*******************/
+
+
+/******************
+Estilizando a tabela
+*******************/
+
+#tabela-demonstrativos{
+	margin-top: 5em;
+	width: fit-content;
+	position: relative;
+	right: 150px;
+	display: none;
+}
+
+#tabela-demonstrativos table{
+	width: 140%;
+}
+
+#tabela-demonstrativos table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+}
+#tabela-demonstrativos table td,
+#tabela-demonstrativos table th {
+	padding: 10px;
+}
+
+#tabela-demonstrativos table tr.cinza{
+	background-color: #CBDFF4;
+}
+
+#tabela-demonstrativos table img{
+	border: none;
+	margin: 5px;
+	width: 30%;
+}
+
+#tabela-demonstrativos table td.download:hover{
+	background-color: #e8fde8;
+	width: fit-content;
+}
+
+
+/******************
+Estilizando tela de login
+*******************/
+#prestador-content #form-longin{
+	position: relative;
+	margin:  0 auto;
+	padding: 50px 0 50px 0;
+	width: fit-content;
+}
+
+#prestador-content #form-longin input,
+#prestador-content #form-longin button{
+	display: block;
+	margin: 0 auto;
+	border: none;
+}
+
+#prestador-content #form-longin input {
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+#prestador-content #form-longin button {
+	width: 50px;
+	height: 30px;
+	border-radius: 5px;
+}
+#prestador-content #form-longin button:hover {
+	background-color: lightgreen;
+}
+
+#prestador-content #form-longin label,
+#prestador-content #form-longin button{
+	margin-top: 15px;
+}
+
+/******************
+Fim Estilizando tela de login
+*******************/
+
+
+
+
+/*
+	FIM CONTEUDO 
+*/
+
+
+
+
+
+/*
+	INICIO RODAPE
+*/
+
+#container-rodape{
+	background: #294c71;
+	padding: 20px;
+	width: 100%;
+	position: relative;
+	bottom: auto;
+}
+
+#rodape{
+	width: 950px;
+	text-align: left;
+	color: #fff;
+}
+
+/*
+	FIM RODAPE
+*/
+
+
+
+div{
+	width: 80%;
+}
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Associação Médica</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body id="tres-colunas" class="Prestador">
+
+	<!-- Início topo -->
+	<div id="topo">
+		<div id="logo">
+			<a href="#">
+				<img src="images/logoV2.png">
+			</a>
+		</div>
+		<ul id="navegacao-horizontal">
+			<li class="primeiro">
+				<a id="Prestador" href="#">Login de Prestador</a>
+			</li>
+			<li style="float: none;"></li>
+		</ul>
+	</div>
+	<!-- Fim topo -->
+
+	<!-- Início container -->
+		<div id="container">
+
+			<!-- Início conteudo -->
+			<div id="prestador-content">
+				<form id="form-longin">
+					<label for="email">E-mail do Prestador:</label>
+					<input id="email" placeholder="e-mail" type="text" maxlength="50" required>
+
+					<label for="senha">Senha:</label>
+					<input id="senha" placeholder="senha" type="password" maxlength="50" required>
+					<button id="buttonLogin" type="button">Logar</button>
+				</form>
+				<p id = "msg-erro" style="display: none; text-align: center;"></p>
+			</div>
+		</div>
+	</body>
+	<script src="script/login.js"></script>
+</html>

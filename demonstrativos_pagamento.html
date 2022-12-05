@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Associação Médica</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+
+	<body id="tres-colunas" class="Relatorio">
+
+	<!-- Início topo -->
+	<div id="topo">
+		<h2 id="codigo-do-prestador">Código do Prestador: 10304020</h2>
+		<div id="logo">
+			<a href="index.html">
+				<img src="images/logoV2.png">
+			</a>
+		</div>
+		<ul id="navegacao-horizontal">
+			<li class="primeiro">
+				<a id="Prestador" href="index.html">Prestador</a>
+			</li>
+			<li>
+				<a id="Home" href="">Home</a>
+			</li>
+			<li>
+				<a id="Emissao" href="">Emissão de Guias</a>
+			</li>
+			<li>
+				<a id="Faturamento" href="">Faturamento</a>
+			</li>
+			<li>
+				<a id="Movimentacao" href="">Movimentação</a>
+			</li>
+			<li>
+				<a id="Relatorio" href="">Relatórios</a>
+			</li>
+			<li>
+				<a id="Configuracoes" href="">Configurações</a>
+			</li>
+			<li>
+				<a id="Consultar" href="">Consultar Prontuários</a>
+			</li>
+			<li>
+				<a id="Sair" href="">Sair</a>
+			</li>
+			<li style="float: none;"></li>
+		</ul>
+	</div>
+	<!-- Fim topo -->
+
+
+		<!-- Início container -->
+	     <div id="container">
+
+	     	<!-- Início conteudo -->
+	     	<div id="content">
+
+	     		<div id="primario">
+					<!--inicio lateral-->
+					<div id="lateral">
+						<div class="caixa">
+							<h2>Relatórios</h2>
+							<div class="caixa-conteudo">
+								<ul>
+									<li>
+										<a href="">Consultar carência</a>
+									</li>
+									<li>
+										<a href="">Consultar Beneficiário</a>
+									</li>
+									<li>
+										<a href="">Consultar Atendimentos</a>
+									</li>
+									<li>
+										<a href="">Equivalência TUSS</a>
+									</li>
+									<li>
+										<a href="">Faturas apresentadas</a>
+									</li>
+									<li>
+										<a href="">Tabela de preços</a>
+									</li>
+									<li>
+										<a href="">Atualização cadastral</a>
+									</li>
+									<li>
+										<a href="">Glosas</a>
+									</li>
+									<li>
+										<a href="">Guias Faturadas</a>
+									</li>
+									<li id="demonstrativos">
+										<a href="#">Demonstrativo</i></a>
+										<!--inicio menu suspenso-->
+										<div id="lateral-2-menu-suspenso">
+											<div class="caixa-conteudo">
+												<ul>
+													<li>
+														<a href="">Demonstrativos de pagamento</a>
+													</li>
+													<li>
+														<a href="">Relatório para declaração de IR</a>
+													</li>
+													<li>
+														<a href="">Declaração de IR - Modelo Receita Federal</a>
+													</li>
+													<li>
+														<a href="">Demonstrivo de ISS</a>
+													</li>
+													<li>
+														<a href="">Demonstrivo de INSS</a>
+													</li>
+													<li>
+														<a href="">Demonstrativo de débitos financeiros</a>
+													</li>
+													<li>
+														<a href="">Demonstrativos de capital social</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- fim lateral -->
+
+	     		</div>
+
+	     		<div id="secundario">
+
+					<div id="formulario">
+						<form class="fomularioFiltro">
+							<h1>DEMONSTRATIVOS DE PAGAMENTOS</h1>
+
+							<label for="nome-prestador">Prestador</label>
+							<input type="text" id="nome-prestador" name="nome-prestador" disabled placeholder="Hospital Bom Atendimento">
+
+							<label for="filtro">Filtrar por</label>
+							<select id="filtro" name="filtro">
+								<option value="Data">Data do Pagamento</option>
+								<option value="Competencia">Competencia</option>
+							</select>
+
+							<div id="inputDate">
+								<p>De</p>
+								<input id="dataInicial" type="date" placeholder="Início">
+								<p>até</p>
+								<input id="dataFinal" type="date" placeholder="Fim">
+							</div>
+
+							<p id = "msg-erro" style="display: none"></p>
+
+							<button id="buttonListar" type="button">Filtrar</button>
+							<button id="buttonListarTodos" type="button">Listar Todos</button>
+
+						</form>
+					</div>
+
+					<div id="tabela-demonstrativos">
+						<table>
+
+
+
+						</table>
+
+					</div>
+
+
+
+	     		</div>
+                <div style="clear: both;"></div>
+	     	</div>
+	     	<!-- Fim conteudo -->
+
+
+<!--	     </div> &lt;!&ndash; Fim container &ndash;&gt;-->
+
+<!--	     <div id="container-rodape" style="clear: both;">-->
+<!--	     	 <div id="rodape">-->
+<!--	     	 	&copy; Copyright 2000-2022 Associação Médica-->
+<!--	     	 </div>-->
+<!--	     </div>-->
+
+<!--		 </div>-->
+	</body>
+
+   <script src="./script/indexScript.js"></script>
+</html>
