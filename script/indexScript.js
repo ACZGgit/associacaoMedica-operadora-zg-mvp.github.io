@@ -4,7 +4,7 @@ if(!(sessionStorage.getItem("logado") === "yes"))
 
 //************** URLs ********************************//
 //urlLocalhost = "http://localhost:8080"
-const urlBackend = 'https://backend-site-operadora-383514.rj.r.appspot.com';
+const urlBackend = 'https://skilful-union-403519.rj.r.appspot.com';
 
 
 
