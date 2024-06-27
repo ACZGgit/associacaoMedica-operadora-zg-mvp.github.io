@@ -4,8 +4,8 @@ if(!(sessionStorage.getItem("logado") === "yes"))
 
 //************** URLs ********************************//
 //urlLocalhost = "http://localhost:8080"
-const urlBackend = 'https://convenioassociacaomedica.rj.r.appspot.com';
-
+//const urlBackend = 'https://convenioassociacaomedica.rj.r.appspot.com';
+const urlBackend = 'https://convenioassociacaomedica.onrender.com';
 
 
 //***************** formulário *************************//

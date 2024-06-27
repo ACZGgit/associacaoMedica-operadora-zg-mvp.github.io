@@ -1,4 +1,4 @@
-const urlBackend = 'https://convenioassociacaomedica.rj.r.appspot.com';
+const urlBackend = 'https://convenioassociacaomedica.onrender.com';
 
 const formInputs = document.getElementById("form-longin").querySelectorAll("input");
 let email = formInputs[0];
